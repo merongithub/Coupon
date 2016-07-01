@@ -1,0 +1,5 @@
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/interfaces/dto/Coupon.java
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/interfaces/dto/Store.java
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/interfaces/ICouponPersistance.java
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/interfaces/ICouponService.java
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/persistance/CouponRepository.java
