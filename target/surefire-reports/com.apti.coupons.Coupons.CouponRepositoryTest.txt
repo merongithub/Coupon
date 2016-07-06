@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.apti.coupons.Coupons.CouponRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.979 sec <<< FAILURE!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.148 sec <<< FAILURE!
 testFindCouponbyId(com.apti.coupons.Coupons.CouponRepositoryTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)

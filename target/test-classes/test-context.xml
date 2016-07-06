@@ -6,12 +6,13 @@
        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
     <bean id="couponDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="url" value="jdbc:mysql://localhost:3306/couponJava"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/couponDB"/>
         <!--<property name="url" value="jdbc:oracle:thin:@careerdb03.qa.aptimus.net:1521:q3career"/>-->
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="password" value="admin"/>
+        <property name="connectionCachingEnabled" value="true"/>
     </bean>
     
-    <import resource="classpath*:Coupon-persistence-appContext.xml"/>
+   <!-- <import resource="classpath*:Coupon-persistence-appContext.xml"/> -->
  </beans>

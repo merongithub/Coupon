@@ -9,10 +9,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration(locations={"classpath:Coupon-persistence-appContext.xml", "classpath:test-context.xml"})
+//@ContextConfiguration(locations={"file:src/main/resources/Coupon-persistence-appContext.xml", "classpath:test-context.xml"})
 
 
-@ContextConfiguration( "/test-context.xml")
+@ContextConfiguration(locations={"classpath:/test-context.xml","classpath:Coupon-persistence-appContext.xml"})
 @Rollback 
 public class BaseTestCase {
 
