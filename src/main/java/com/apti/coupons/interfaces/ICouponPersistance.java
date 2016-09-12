@@ -8,8 +8,9 @@ import com.apti.coupons.interfaces.dto.Coupon;
 public interface ICouponPersistance extends CrudRepository<Coupon, Long> {
 	
 	Coupon findById(Long couponId);
-	List<Coupon> findByCouponName(Long CouponId, String couponName);
+	List<Coupon> findByTitel(Long CouponId, String couponName);
 	Coupon save(Coupon entity);
-	void deleteId(Long id);
+	void delete(Coupon entity);
+	void delete(Long id);
 	
 }

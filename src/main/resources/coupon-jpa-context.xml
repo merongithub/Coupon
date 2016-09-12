@@ -10,7 +10,7 @@
         <class>com.apti.coupons.interfaces.dto.Coupon</class>
         <class>com.apti.coupons.interfaces.dto.Store</class>
         <properties>
-            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
             <property name="hibernate.cache.use_second_level_cache"	value="false" />
             <property name="hibernate.cache.use_structured_entries"	value="true" />

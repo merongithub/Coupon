@@ -13,9 +13,10 @@ import com.apti.coupons.interfaces.dto.Coupon;
 @Singleton
 public interface CouponRepository extends ICouponPersistance {
    
-	List<Coupon> findByCouponName(Long CouponId, String couponName);
+	List<Coupon> findByTitel(Long CouponId, String couponName);
 	Coupon save(Coupon entity);
-	void deleteId(Long id);	
+	void delete(Coupon entity);
+	
 
 
 

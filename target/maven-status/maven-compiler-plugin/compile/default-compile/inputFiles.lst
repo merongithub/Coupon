@@ -3,3 +3,5 @@
 /Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/interfaces/ICouponPersistance.java
 /Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/interfaces/ICouponService.java
 /Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/persistance/CouponRepository.java
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/services/CouponService.java
+/Users/abrme002/Projects/Coupons/src/main/java/com/apti/coupons/webservices/CouponResources.java

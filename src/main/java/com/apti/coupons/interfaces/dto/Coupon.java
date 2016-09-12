@@ -2,13 +2,18 @@ package com.apti.coupons.interfaces.dto;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import javax.persistence.CascadeType;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 
 
-@Entity
+@Entity(name="Coupon")
 public class Coupon implements Serializable{
 	
 	/**
@@ -23,6 +28,9 @@ public class Coupon implements Serializable{
 	private String description;
 	private String merchant;
 	private String titel;
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="storid")
+	//@Column(name="sotrId")
 	private Store store;
 	private Date expire_at;
 	private Date published_at;
@@ -77,6 +85,11 @@ public class Coupon implements Serializable{
 	public void setPublished_at(Date published_at) {
 		this.published_at = published_at;
 	}
-	
+    
+    public Long getId() {
+        return id;
+    }
+    
+   
 	
 }
