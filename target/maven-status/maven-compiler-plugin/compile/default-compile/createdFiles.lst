@@ -1,8 +1,0 @@
-com/apti/coupons/interfaces/ICouponService.class
-com/apti/coupons/interfaces/dto/Coupon.class
-com/apti/coupons/interfaces/ICouponPersistance.class
-com/apti/coupons/persistance/CouponRepository.class
-com/apti/coupons/services/CouponService.class
-com/apti/coupons/webservices/CouponResources.class
-com/apti/coupons/webservices/CouponResources$1.class
-com/apti/coupons/interfaces/dto/Store.class
