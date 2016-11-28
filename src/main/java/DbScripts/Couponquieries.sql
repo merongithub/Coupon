@@ -18,13 +18,16 @@
 	description VARCHAR(25),
 	merchant VARCHAR(25),
 	title    VARCHAR(25),
-	sotrId int,
+	stor_id int,
 	expire_at date,
 	published_at date,
 	PRIMARY KEY  (id),
-	FOREIGN KEY (sotrId)  REFERENCES store(id)
+	FOREIGN KEY (stor_id)  REFERENCES store(id)
 	);
    
+	
+ insert into Coupon values(1,"WIN","WIN2910","Merlot","Red Vain","desc",1,CURDATE(),CURDATE());
+
    
    
    

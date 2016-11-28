@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //@ContextConfiguration(locations={"file:src/main/resources/Coupon-persistence-appContext.xml", "classpath:test-context.xml"})
 
 
-@ContextConfiguration(locations={"classpath:/test-context.xml","classpath:Coupon-persistence-appContext.xml"})
+@ContextConfiguration(locations={"classpath:/test-context.xml","classpath:Coupon-persistence-appContext_Test.xml"})
 @Rollback 
 public class BaseTestCase {
 

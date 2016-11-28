@@ -2,9 +2,14 @@ package com.apti.coupons.interfaces.dto;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 
 
@@ -22,8 +27,10 @@ public class Coupon implements Serializable{
 	private String couponcode;
 	private String description;
 	private String merchant;
-	private String titel;
-	private Store store;
+	private String title;
+	@OneToOne
+	@JoinColumn(name="id")	    
+	private Store stor_id;
 	private Date expire_at;
 	private Date published_at;
 	
@@ -54,16 +61,16 @@ public class Coupon implements Serializable{
 		this.merchant = merchant;
 	}
 	public String getTitel() {
-		return titel;
+		return title;
 	}
 	public void setTitel(String titel) {
-		this.titel = titel;
+		this.title = titel;
 	}
 	public Store getStore() {
-		return store;
+		return stor_id;
 	}
 	public void setStore(Store store) {
-		this.store = store;
+		this.stor_id = store;
 	}
 	public Date getExpire_at() {
 		return expire_at;

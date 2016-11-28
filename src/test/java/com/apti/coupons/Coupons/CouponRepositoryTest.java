@@ -19,7 +19,7 @@ public class CouponRepositoryTest extends BaseTestCase {
 	@Test
 	public void testFindCouponbyId() {
     Coupon coupon=couponRepository.findById(new Long(1));
-    
+         
     System.out.println(coupon.getCategory());
     Assert.assertNotNull(coupon);
      

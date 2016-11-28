@@ -10,7 +10,7 @@
         <!--<property name="url" value="jdbc:oracle:thin:@careerdb03.qa.aptimus.net:1521:q3career"/>-->
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="username" value="root"/>
-        <property name="password" value="admin"/>
+        <property name="password" value=""/>
         <property name="connectionCachingEnabled" value="true"/>
     </bean>
     

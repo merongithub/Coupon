@@ -3,18 +3,24 @@ package com.apti.coupons.interfaces.dto;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+//@Table(name="store")
 public class Store implements Serializable{
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1865905710645020046L;
+	@Id
+	@GeneratedValue
+	private Long id;
 	private double lat;
 	private double longtiude;
 	private String city;
-	private String phone;
 	private String state;
 	private String street;
 	private String zip;
@@ -39,12 +45,7 @@ public class Store implements Serializable{
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+	
 	public String getState() {
 		return state;
 	}

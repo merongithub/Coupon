@@ -16,12 +16,18 @@
     	   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
     <context:component-scan base-package="com.apti.coupons.persistance" />
-    <context:component-scan base-package="com.apti.coupons.*" />
     <context:component-scan base-package="com.apti.coupons.interfaces.dto" />
-   <!--  <import resource="classpath*:coupon-jpa-context.xml"/>-->
-
-   <jee:jndi-lookup id="couponDS" jndi-name="jdbc/couponDS" />
-      <bean id="couponEntityManagerFactory"
+    <context:component-scan base-package="com.apti.coupons.*" />
+  
+  
+     <bean id="couponDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="url" value="jdbc:mysql://localhost:3306/couponDB"/>
+        <!--<property name="url" value="jdbc:oracle:thin:@careerdb03.qa.aptimus.net:1521:q3career"/>-->
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Admin"/>
+        </bean>
+    <bean id="couponEntityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceXmlLocation" value="classpath*:coupon-jpa-context.xml" />
         <property name="persistenceUnitName" value="couponHibernate" />
@@ -43,6 +49,4 @@
       <repository:include-filter type="assignable"
                                    expression="com.apti.coupons.persistance.CouponRepository"/> 
     </jpa:repositories>
-    
-  
 </beans>
